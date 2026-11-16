@@ -34,9 +34,8 @@ const userSchema = new Schema(
     // profile (relacion embebida)
     role:{
         type:String,
-        enum:{
-            values:['user','admin']
-        },
+        enum:
+            ['user','admin'],
         default: 'user'
     },
     events:{
